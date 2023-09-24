@@ -1,8 +1,14 @@
+import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const yeongdoFont = localFont({
+  src: "./fonts/yeongdo.woff2",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "창덕도감 | 2023 청년 유네스코 세계유산 지킴이 {창덕하게}",
@@ -17,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={yeongdoFont.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
