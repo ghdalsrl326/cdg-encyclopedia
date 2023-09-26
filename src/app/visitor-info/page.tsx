@@ -1,23 +1,26 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
-import { PiMinusCircleFill, PiPlusCircleFill } from "react-icons/pi";
 import ZoomableImage from "@/components/ZoomableImage";
+import { SlArrowDown } from "react-icons/sl";
+import SectionTitle from "@/components/SectionTitle";
+import FacilityItem from "@/components/FacilityItem";
+import RegionItem from "@/components/RegionItem";
 
 const yeongdoFont = localFont({
   src: "../fonts/yeongdo.woff2",
   display: "swap",
 });
 
-const scDreamFont = localFont({
-  src: "../fonts/SCDream1.otf",
+const scDream500Font = localFont({
+  src: "../fonts/SCDream5.otf",
   display: "swap",
 });
 
 const page = () => {
   return (
     <section
-      className={`${scDreamFont.className} relative flex flex-col justify-between px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
+      className={`${scDream500Font.className} relative flex flex-col justify-between px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
     >
       <Image
         fill
@@ -40,6 +43,48 @@ const page = () => {
         height={3080}
         quality={100}
       />
+      <div className="flex flex-col gap-12 items-center rounded-3xl z-0 w-full bg-white">
+        <SlArrowDown className=" text-[#FFC1F2] h-12 w-12" />
+        <section id="시설정보" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="시설정보" />
+          <FacilityItem src="매표소" title="매표소" />
+          <FacilityItem src="안내" title="안내" />
+          <FacilityItem src="화장실" title="화장실" />
+          <FacilityItem src="홍보관" title="홍보관 ( 음료, 기념품점 )" />
+          <FacilityItem src="휠체어" title="휠체어, 유모차 대여" />
+          <FacilityItem src="물품보관함" title="물품보관함" />
+          <FacilityItem src="수유실" title="수유실" />
+          <FacilityItem src="구급약품" title="구급약품" />
+          <FacilityItem src="심장제세동기" title="심장제세동기" />
+        </section>
+        <hr className="border-[#FF64DE] border-t w-1/2" />
+        <section id="권역" className="flex flex-col gap-4 w-1/2 text-[#05AED8]">
+          <SectionTitle title="권역" />
+          <div className="flex flex-col md:flex-row md:gap-16">
+            <div className="flex flex-col gap-4">
+              <RegionItem index="1" title="돈화문" />
+              <RegionItem index="2" title="인정전" />
+              <RegionItem index="3" title="선정전" />
+              <RegionItem index="4" title="희정당" />
+              <RegionItem index="5" title="대조전" />
+              <RegionItem index="6" title="낙선재" />
+              <RegionItem index="7" title="성정각" />
+              <RegionItem index="8" title="후원 입구/매표소" />
+            </div>
+            <div className="flex flex-col gap-4">
+              <RegionItem index="9" title="부용지와 주합루" />
+              <RegionItem index="10" title="애련지와 의두합" />
+              <RegionItem index="11" title="연경당 일원" />
+              <RegionItem index="12" title="존덕정 일원" />
+              <RegionItem index="13" title="옥류천 일원" />
+              <RegionItem index="14" title="신 선원전 일원" />
+              <RegionItem index="15" title="구 선원전 일원" />
+              <RegionItem index="16" title="궐내각사 일원" />
+            </div>
+          </div>
+        </section>
+        <hr className="border-[#FF64DE] border-t w-1/2" />
+      </div>
     </section>
   );
 };
