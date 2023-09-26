@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import {
-  BUILDING,
-  GARDEN,
-  INSTAGRAMURL,
-  MAPSECTOR,
-  URL,
-} from "@/data/constant";
+import { URL } from "@/data/url";
+import { GARDEN } from "@/data/garden";
+import { VISITORINFO } from "@/data/visitorinfo";
+import { BUILDING } from "@/data/building";
 import DisclosureItem from "./DisclosureItem";
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -38,7 +35,7 @@ const Drawer = ({ isOpen, onClose }: DrawerProps) => {
       >
         <div className="w-full px-4 pt-6">
           <Link
-            href={INSTAGRAMURL}
+            href={URL.INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-end w-full px-4 mb-4"
@@ -55,7 +52,7 @@ const Drawer = ({ isOpen, onClose }: DrawerProps) => {
           <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2 flex flex-col gap-4">
             <DisclosureItem
               title="지도보기"
-              items={Array.from(MAPSECTOR)}
+              items={Array.from(VISITORINFO)}
               openImageSrc="/mapSelected.svg"
               closeImageSrc="/map.svg"
               urlPrefix={URL.VISITOR_INFO}

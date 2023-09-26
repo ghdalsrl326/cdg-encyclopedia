@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
 import Link from "next/link";
-import { BUILDING } from "@/data/constant";
+import { BUILDING } from "@/data/building";
 import BuildingHighlightedMap from "@/components/BuildingHighlightedMap";
 import BuildingNav from "@/components/BuildingNav";
 import BuildingContent from "@/components/BuildingContent";

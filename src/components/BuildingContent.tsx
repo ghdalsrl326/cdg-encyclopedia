@@ -1,6 +1,6 @@
 import React from "react";
 import localFont from "next/font/local";
-import { BUILDING } from "@/data/constant";
+import { BUILDING } from "@/data/building";
 
 const scDream300Font = localFont({
   src: "../app/fonts/SCDream3.otf",

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BUILDING, INSTAGRAMURL } from "@/data/constant";
+import { BUILDING } from "@/data/building";
+import { URL } from "@/data/url";
 
 type Props = {
   slug: string;
@@ -19,7 +20,7 @@ const BuildingSNS = ({ slug }: Props) => {
           className="border-[#FF64DE] border-2 transform transition-transform duration-300 hover:scale-105"
         >
           <Link
-            href={buildingData?.sns[index] || INSTAGRAMURL}
+            href={buildingData?.sns[index] || URL.INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
           >
