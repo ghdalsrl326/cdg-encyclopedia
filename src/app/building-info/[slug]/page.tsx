@@ -6,6 +6,7 @@ import { BUILDING } from "@/data/constant";
 import BuildingHighlightedMap from "@/components/BuildingHighlightedMap";
 import BuildingNav from "@/components/BuildingNav";
 import BuildingContent from "@/components/BuildingContent";
+import BuildingSNS from "@/components/BuildingSNS";
 
 type Props = {
   params: {
@@ -46,6 +47,7 @@ const page = async ({ params: { slug } }: Props) => {
             />
           </div>
           <BuildingHighlightedMap slug={slug} />
+          <BuildingSNS slug={slug} />
           <BuildingContent slug={slug} />
         </div>
       </article>

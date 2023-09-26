@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { BUILDING, GARDEN, MAPSECTOR, URL } from "@/data/constant";
+import {
+  BUILDING,
+  GARDEN,
+  INSTAGRAMURL,
+  MAPSECTOR,
+  URL,
+} from "@/data/constant";
 import DisclosureItem from "./DisclosureItem";
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -32,7 +38,7 @@ const Drawer = ({ isOpen, onClose }: DrawerProps) => {
       >
         <div className="w-full px-4 pt-6">
           <Link
-            href={"https://www.instagram.com/heritage_changdeok/"}
+            href={INSTAGRAMURL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-end w-full px-4 mb-4"

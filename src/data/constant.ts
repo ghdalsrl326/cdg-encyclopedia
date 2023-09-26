@@ -1,3 +1,5 @@
+export const INSTAGRAMURL = "https://www.instagram.com/heritage_changdeok/";
+
 export const URL = {
   COVER: "/",
   BUILDING_INFO: "/building-info",
@@ -54,6 +56,11 @@ export const BUILDING = [
     
     돈화문은 1963년 보물로 지정되었으며 정면 5칸, 측면 2칸의 중층의 다포식 우진각지붕의 건물로, 서울 숭례문, 창경궁 홍화문과 함께 조선시대 대규모 문의 건축양식을 살펴볼 수 있는 중요한 유적이다.
     `,
+    sns: [
+      "https://www.instagram.com/p/Cti64RfSdrA/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/Ct07qAMSEBE/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CuBzpAjJ5p0/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "인정전",
@@ -68,6 +75,11 @@ export const BUILDING = [
     
     인정전 내부에는 정면에 임금님의 용상이 있고 그 뒤에는 나무로 만든 곡병과 곡병 뒤에는 일월오악도(日月五岳圖)라는 병풍이 있다.병풍에는 음양을 뜻하는 해와 달이 있으며 이는 다시 왕과 왕비를 상징한다. 그 아래 다섯 개의 산봉우리는 우리나라의 동,서,남,북,중앙의 다섯 산을 가리키며 이는 국토를 의미한다.이것은 임금이 중앙에서 사방을 다스리고, 음양의 이치에 따라 정치를 펼친다는 뜻을 담고 있기도 하다. 그리고 주변에는 유리창을 비롯하여 전구나 커튼 등 서양 장신구가 설치되어 있는데, 이는 구한말 외국과의 수교 후 다양한 외래 문물이 들어 온 것이며, 1907년 순종이 덕수궁에서 창덕궁으로 이어한 후에 인정전의 실내바닥이 전돌에서 마루로 바뀌고, 전구가 설치되는 등 부분적인 변화가 일어났다.
     `,
+    sns: [
+      "https://www.instagram.com/p/CvPErfySIUp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CvEwTauyfx0/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CvJ563oyuxk/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "선정전",
@@ -81,6 +93,11 @@ export const BUILDING = [
     이 건물에서는 왕과 왕비가 크고 작은 행사를 벌였는데, 성종 때 왕비는 이곳에서 양로연(養老宴)을 베풀었고 친히 누에를 치는 일을 모범으로 보였으며, 왕이 주연을 열기도 하였다. 인조반정 때 창덕궁에 큰 불이 났을 적에 소실된 것으로 추측되며, 1647년(인조 25) 창덕궁 중건 때 다시 중건된 것으로 생각된다. 그 뒤 1674년(현종 15)에 수리한바 있고, 1803년(순조 3) 12월에 선정전 서행각(西行閣)이 소실된 것을 다음해 12월에 복건(復建)하였을 것으로 추측된다. 그 후로 편전 기능이 선정전 뒤편의 희정당으로 옮겨 가면서 순조 이후에는 이곳을 혼전(魂殿, 종묘로 모시기 전까지 죽은 왕과 왕비의 신주를 모시는 곳)으로 사용하기도 했다.
     
     장대석으로 월대(月臺)를 쌓고, 상부를 모난 박석을 깔아 마무리하고, 양끝에 드무(넓적하게 생긴 독)를 놓았다. 월대 위에는 장대석 한벌대의 기단을 쌓고 원형의 다듬은 돌초석을 놓아 두리기둥을 세웠는데, 내부 앞쪽에만 고주(高柱)를 세웠다. 정면 3칸, 측면 3칸의 정면·후면과 측면 어간에는 띠살창호의 4분합을 달고, 측면 전후 툇간에는 2분합을, 동·서 전툇간과 후면 동측칸에는 2분합의 판문(板門)을 달았다. 창덕궁 안에는 청기와를 덮은 건물이 몇 채 있었으나 현재는 선정전만이 유일하게 남아 있으며, 조선 중기 공포의 형상을 잘 남기고 있어 중요시된다.`,
+    sns: [
+      "https://www.instagram.com/p/Cvb-AWLS-hY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CvWx-MQyH7A/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CvhFqnOyZLJ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "희정당",
@@ -95,6 +112,11 @@ export const BUILDING = [
     
     <동궐도> 에 그려진 원래의 희정당은 여러 개의 돌기둥 위에 세운 아담한 집이었고 마당에 연못도 있었다. 지금의 희정당은 이 모습과 달리, 앞면 11칸·옆면 4칸으로 한식건물에 카펫,유리 창문, 천장에 샹들리에 등 서양식 실내장식을 하고있다. 지붕은 옆면에서 볼 때 여덟 팔(八)자 모양을 한 팔작지붕으로 꾸몄다. 응접실에는 김규진의 금강산총석정절경도,금강산 만물초승경도의 벽화가 걸려있다. 건물 앞쪽에는 전통 건물에서 볼 수 없는 현관이 생겼고 자동차가 들어설 수 있게 설비되었다. 이는 마차나 자동차가 사용되기 시작하면서 채택된 서양식 구조로 보인다. 조선 후기와 대한제국시대에 왕의 사무실과 외국 사신 등을 접대하는 곳으로 사용하면서 한식과 서양식이 어우러진 건물로, 시대의 변천사를 엿볼 수 있는 건축이라 할 수 있다.
     `,
+    sns: [
+      "https://www.instagram.com/p/Cvt9CVoyrd7/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CvozedgS4Lh/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CvzGoIwyEsi/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "대조전",
@@ -109,6 +131,11 @@ export const BUILDING = [
     
     대조전은 현재 36칸으로 앞면 9칸·옆면 4칸이며, 지붕은 옆면에서 볼 때 여덟 팔(八)자 모양을 한 팔작지붕이다. 건물 가운데 3칸은 거실로 삼았으며, 거실의 동·서쪽으로 왕과 왕비의 침실을 두었다. 각 침실의 옆면과 뒷면에는 작은 방을 두어 시중 드는 사람들의 처소로 삼았다. 지붕에 용마루가 없으며 내부에 서양식 쪽마루와 유리창· 가구 등을 갖추어 놓아 현대적인 실내장식을 보이고 있다는 점이 특징적이다. 이 건물은 조선 왕실이 생활하던 건물로, 특히 한말 황실의 내실(內室) 모습을 남겨두고 있는 점에서 중요하다.
     `,
+    sns: [
+      "https://www.instagram.com/p/Cv__OW2ylhn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/Cv61EX-SVjj/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CwFIMMLysIH/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "성정각",
@@ -122,6 +149,11 @@ export const BUILDING = [
     성정각은 왕세자의 공간이었지만, 국왕이 사용하기도 하였다. 곧 1782년(정조 6)에 동궁전인 중희당(重熙堂)이 건립되면서, 이 건물은 초계문신의 시험을 치르거나 대신을 만나는 곳으로 활용되어 희정당(熙政堂)과 함께 편전으로 쓰이기도 하였다. 1895년(고종 32)에 내의원(內醫院)을 전의사(典醫司)로 개편한 뒤, 내의원에 있던 현판, 의약 도구 등을 옮겨와 내의원 물품 창고로 사용하였다. 여기서 조선 후기에 궁궐 공간을 운영하였던 모습을 살펴볼 수 있다.
     
     성정각은 앞면 6칸, 옆면 2칸으로, 익공계 팔작지붕의 형식이다. 서쪽부터 마루 2칸, 방 2칸을 두었고, 동쪽에는 남북 3칸의 누마루를 설치하였다. 성정각이라는 현판의 글씨는 정조(正祖)의 어필이라고 전해진다. 성정각의 대문은 높은 솟을 대문이며 영현문(迎賢門)이라고 이름지었다. 정문으로 들어서면 건물의 오른쪽에 누마루가 있는데 남쪽에는 보춘정(報春亭)이라는 현판을 달았고 동쪽으로는 희우루(喜雨樓)라고 현판을 달았다. 우측 맞배지붕의 4칸짜리 전각에는 내의원이었음을 알리는 보호성궁(保護聖躬), 조화어약(調和御藥)이라는 현판이 걸려있다. 「동궐도(東闕圖)」에는 희우루 아래층에 벽을 설치한 모습이 보이는데, 지금은 흔적이 없는 상태이다.`,
+    sns: [
+      "https://www.instagram.com/p/CwSGjC3yZx-/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CwM2l3rS-eo/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CwXJxuWS61h/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "낙선재",
@@ -136,6 +168,11 @@ export const BUILDING = [
     
     낙선재 본채는 정면 6칸, 측면 2칸의 단층 팔작집으로 기둥 위 짜임은 간소한 초익공 형식으로 되어 있다. 낙선재의 정문은 장락문(長樂門)으로 편액은 흥선대원군의 글씨로 알려져 있다.  헌종은 평소 검소하면서도 선진 문물에 관심이 많았다. 그 면모가 느껴지는 낙선재는 단청을 하지 않은 소박한 모습을 지녔으며, 궁궐 안에 사대부주택형식으로 지은 건물로는 낙선재와 연경당뿐이다. 궁궐침전형식이 응용되면서 다른 곳에서는 쉽게 찾아볼 수 없는 다양한 문양의 장식이 특히 주목되며, 조선 후기 건축 장인(匠人)들의 축적된 기량을 엿볼 수 있어 건축적인 가치가 높다. 또한 조선왕가의 실제 침전으로 사용된 역사성도 중요한 건물이다.
     `,
+    sns: [
+      "https://www.instagram.com/p/Cw2JrljSLMP/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CwrwI1syahH/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/Cw7R_RoLnGE/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "부용정",
@@ -150,6 +187,11 @@ export const BUILDING = [
     
     한편, 부용정과 접한 부용지는 창덕궁 후원의 대표적인 방지(方池)로, 천원지방의 조형원리에 따라 조성한 대표적 연못이다. 길이 34.5m, 폭 29.4m의 장방형 연못으로, 가운데에는 도가 사상을 상징하는 직경 9m의 원형 인공섬이 조성되었다. 예전에는 이 섬에 현종 때 지은 청서정(淸暑亭)이 있었다고 한다. 연못을 사각형으로 만들고 그 안에 둥근 섬을 두는 것은 천원지방(天圓地方)이라는 동양의 세계관을 반영한 것이다. 연못의 물은 지하수로 공급되지만 비가 올 때는 서쪽 계곡의 물이 용머리 모양의 입을 통해 들어오고 동쪽의 수구를 통해 나갈 수 있도록 되어 있다. 부용지를 둘러싼 장대석 중 부용정 쪽 한 부분에는 물고기가 조각되어 있다.
     `,
+    sns: [
+      "https://www.instagram.com/p/CxC9uMDrhh3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "",
+      "",
+    ],
   },
   {
     id: "애련정",
@@ -164,6 +206,7 @@ export const BUILDING = [
     
     애련정 일원에는 석함(石函)·석문·석누조(石漏槽) 등이 위치하며, 해치나 연판문·용두(龍頭)의 문양이 새겨졌다. 석함의 경우 애련정 좌우에 하나씩 존재하는데, 좌측 석함에 새겨진 서수(瑞獸)의 경우 뿔이 있는 것으로 보아 해치로 사료되며, 우측 석함은 연판문으로 장식되었다. 장수를 기원하는 의미에서 조영된 석문인 불로문은 큰 돌을 쪼아 만들어 이음새가 없는 것이 특징이다. 석누조에는 벽사의 의미인 용두가 나타나 있다.
     `,
+    sns: ["", "", ""],
   },
   {
     id: "존덕정",
@@ -178,6 +221,7 @@ export const BUILDING = [
     
     존덕정은 육각 정자 형태이며 겹지붕으로 특이한 구성을 보여 준다. 육모지붕의 주심포집에 본 정자 외곽에 지붕을 따로 만든 퇴칸을 설치하였다. 이 정자의 난간이나 교창과 낙양각 등은 뛰어난 소목의 정교한 공예 솜씨를 보여 준다. 보개천장(寶蓋天障)에 그려진 용의 단청 그림이 힘차게 생동한다. 규모는 약 30㎡, 약 9.3평에 지나지 않는다. 존덕정의 내부는 매우 화려한 단청으로 장식되었다. 천장 가운데는 여의주를 사이에 두고 황룡과 청룡이 희롱하는 모습이 그려져 이 정자의 격식이 상당히 높았음을 나타내고, 조선시대 건축의 이채로운 구상과 재주를 보여 주는 중요한 건물이다.
     `,
+    sns: ["", "", ""],
   },
 ] as const;
 
