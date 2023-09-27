@@ -79,11 +79,14 @@ const page = () => {
         <section id="포토스팟" className="w-1/2 flex flex-col gap-4">
           <SectionTitle title="포토스팟" />
           <PhotoSpotSubTitle />
-          <PhotoSpotItem title="돈화문" />
-          <PhotoSpotItem title="인정전" />
-          <PhotoSpotItem title="낙선재" />
-          <PhotoSpotItem title="부용지" />
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <PhotoSpotItem title="돈화문" />
+            <PhotoSpotItem title="인정전" />
+            <PhotoSpotItem title="낙선재" />
+            <PhotoSpotItem title="부용지" />
+          </div>
         </section>
+        <hr className="border-[#FF64DE] border-t w-1/2" />
       </div>
     </section>
   );

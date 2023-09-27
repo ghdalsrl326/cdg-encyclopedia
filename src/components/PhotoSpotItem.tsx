@@ -11,8 +11,8 @@ const PhotoSpotItem = ({ title }: Props) => {
       <Image
         src={`/visitor-info/${title}_포토스팟.png`}
         alt={`${title}_포토스팟`}
-        width={80}
-        height={80}
+        width={100}
+        height={100}
         quality={100}
       />
       <h2 className="text-lg">({title})</h2>
