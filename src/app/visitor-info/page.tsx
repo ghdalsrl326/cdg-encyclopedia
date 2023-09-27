@@ -20,6 +20,7 @@ import PricingTable from "@/components/PricingTable";
 import VisitingHoursDescription from "@/components/VisitingHoursDescription";
 import PricingDescription from "@/components/PricingDescription";
 import TransportationDescription from "@/components/TransportationDescription";
+import EtiquetteDescription from "@/components/EtiquetteDescription";
 
 const page = () => {
   return (
@@ -140,7 +141,9 @@ const page = () => {
         <HorizontalDivider />
         <section id="관람예절" className="w-1/2 flex flex-col gap-4">
           <SectionTitle title="관람예절" />
+          <EtiquetteDescription />
         </section>
+        <SlArrowDown className=" text-[#FFC1F2] h-12 w-12 mb-24 rotate-180" />
       </div>
     </section>
   );
