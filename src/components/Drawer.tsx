@@ -56,6 +56,7 @@ const Drawer = ({ isOpen, onClose }: DrawerProps) => {
               openImageSrc="/mapSelected.svg"
               closeImageSrc="/map.svg"
               urlPrefix={URL.VISITOR_INFO}
+              fragment="#"
             />
             <DisclosureItem
               title="창덕궁 둘러보기"

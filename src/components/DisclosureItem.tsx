@@ -17,6 +17,7 @@ type DisclosureItemProps = {
   openImageSrc: string;
   closeImageSrc: string;
   urlPrefix: string;
+  fragment?: "/" | "#";
 };
 
 const DisclosureItem = ({
@@ -25,6 +26,7 @@ const DisclosureItem = ({
   openImageSrc,
   closeImageSrc,
   urlPrefix,
+  fragment = "/",
 }: DisclosureItemProps) => {
   return (
     <Disclosure>
@@ -62,7 +64,10 @@ const DisclosureItem = ({
           <span className={scDream200Font.className}>
             <Disclosure.Panel className="flex flex-col gap-4 px-4 pt-4 pb-2 text-sm">
               {items.map((item) => (
-                <Link href={`${urlPrefix}/${item.path}`} key={item.id}>
+                <Link
+                  href={`${urlPrefix}${fragment}${item.path}`}
+                  key={item.id}
+                >
                   <span className="inline-flex items-center gap-4">
                     <MdOutlineRadioButtonChecked />
                     {item.id}
