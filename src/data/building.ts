@@ -148,8 +148,8 @@ export const BUILDING = [
       `,
     sns: [
       "https://www.instagram.com/p/CxC9uMDrhh3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
-      "",
-      "",
+      "https://www.instagram.com/p/CxU-zcny-12/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CxC9uMDrhh3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
     ],
   },
   {
