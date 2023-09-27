@@ -16,6 +16,9 @@ import {
 import HorizontalDivider from "@/components/HorizontalDivider";
 import PathItem from "@/components/PathItem";
 import VisitingHoursItem from "@/components/VisitingHoursItem";
+import PricingTable from "@/components/PricingTable";
+import VisitingHoursDescription from "@/components/VisitingHoursDescription";
+import PricingDescription from "@/components/PricingDescription";
 
 const page = () => {
   return (
@@ -120,24 +123,13 @@ const page = () => {
           />
           <VisitingHoursItem title="6월~8월" time="09:00 ~ 18:30" next />
           <VisitingHoursItem title="11월~1월" time="09:00 ~ 17:30" />
-          <div className=" pt-4 pb-2">
-            <h3 className={`${scDream600Font.className} text-2xl`}>
-              ※ 휴관일: 매주 월요일
-            </h3>
-            <h4 className={`${scDream300Font.className}`}>
-              (정기 휴관일인 월요일이 공휴일일 경우 개방하여, 익일 휴관)
-            </h4>
-          </div>
-          <h4 className={`${scDream300Font.className}`}>
-            ※ 입장은 관람 마감 1시간 전까지
-          </h4>
-          <h4 className={`${scDream300Font.className}`}>
-            ※ 후원 관람시간은 후원 관람해설시간과 동일
-          </h4>
+          <VisitingHoursDescription />
         </section>
         <HorizontalDivider />
         <section id="관람요금" className="w-1/2 flex flex-col gap-4">
           <SectionTitle title="관람요금" />
+          <PricingTable />
+          <PricingDescription />
         </section>
         <HorizontalDivider />
         <section id="교통안내" className="w-1/2 flex flex-col gap-4">
