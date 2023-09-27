@@ -19,6 +19,7 @@ import VisitingHoursItem from "@/components/VisitingHoursItem";
 import PricingTable from "@/components/PricingTable";
 import VisitingHoursDescription from "@/components/VisitingHoursDescription";
 import PricingDescription from "@/components/PricingDescription";
+import TransportationDescription from "@/components/TransportationDescription";
 
 const page = () => {
   return (
@@ -134,6 +135,7 @@ const page = () => {
         <HorizontalDivider />
         <section id="교통안내" className="w-1/2 flex flex-col gap-4">
           <SectionTitle title="교통안내" />
+          <TransportationDescription />
         </section>
         <HorizontalDivider />
         <section id="관람예절" className="w-1/2 flex flex-col gap-4">
