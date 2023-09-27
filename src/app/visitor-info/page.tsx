@@ -25,7 +25,7 @@ import EtiquetteDescription from "@/components/EtiquetteDescription";
 const page = () => {
   return (
     <section
-      className={`${scDream500Font.className} relative flex flex-col justify-between px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
+      className={`${scDream500Font.className} relative flex flex-col justify-between px-6 md:px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
     >
       <Image
         fill
