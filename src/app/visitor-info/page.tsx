@@ -8,6 +8,8 @@ import RegionItem from "@/components/RegionItem";
 import PhotoSpotItem from "@/components/PhotoSpotItem";
 import PhotoSpotSubTitle from "@/components/PhotoSpotSubTitle";
 import { scDream500Font, yeongdoFont } from "@/data/fonts";
+import HorizontalDivider from "@/components/HorizontalDivider";
+import PathItem from "@/components/PathItem";
 
 const page = () => {
   return (
@@ -49,7 +51,7 @@ const page = () => {
           <FacilityItem src="구급약품" title="구급약품" />
           <FacilityItem src="심장제세동기" title="심장제세동기" />
         </section>
-        <hr className="border-[#FF64DE] border-t w-1/2" />
+        <HorizontalDivider />
         <section id="권역" className="flex flex-col gap-4 w-1/2 text-[#05AED8]">
           <SectionTitle title="권역" />
           <div className="flex flex-col md:flex-row md:gap-16">
@@ -75,7 +77,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <hr className="border-[#FF64DE] border-t w-1/2" />
+        <HorizontalDivider />
         <section id="포토스팟" className="w-1/2 flex flex-col gap-4">
           <SectionTitle title="포토스팟" />
           <PhotoSpotSubTitle />
@@ -86,7 +88,38 @@ const page = () => {
             <PhotoSpotItem title="부용지" />
           </div>
         </section>
-        <hr className="border-[#FF64DE] border-t w-1/2" />
+        <HorizontalDivider />
+        <section id="추천동선" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="추천동선" />
+          <PathItem
+            title="창덕궁의 주요 전각이 보고싶다면?"
+            path={["❶", "▷", "❷", "▷", "❸", "▷", "❹", "▷", "❺", "▷", "❻"]}
+          />
+          <PathItem
+            title="종로 한복판에서 느껴보는 자연"
+            path={["❶", "▷", "❽", "▷", "❾", "▷", "❿", "▷", "⓬", "▷", "⓭"]}
+          />
+          <PathItem
+            title="창덕궁 옛 모습을 간직한 나무를 따라"
+            path={["❶", "▷", "❼", "▷", "❾", "▷", "⓬", "▷", "⓯", "▷", "⓰"]}
+          />
+        </section>
+        <HorizontalDivider />
+        <section id="관람시간" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="관람시간" />
+        </section>
+        <HorizontalDivider />
+        <section id="관람요금" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="관람요금" />
+        </section>
+        <HorizontalDivider />
+        <section id="교통안내" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="교통안내" />
+        </section>
+        <HorizontalDivider />
+        <section id="관람예절" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="관람예절" />
+        </section>
       </div>
     </section>
   );

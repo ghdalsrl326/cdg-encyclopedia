@@ -14,11 +14,11 @@ const SectionTitle = ({ title }: Props) => {
       <Image
         src="/visitor-info/구분기호.svg"
         alt="구분기호"
-        width={21.7}
-        height={19.4}
+        width={24}
+        height={24}
         quality={100}
       />
-      <h1 className="text-xl">{title}</h1>
+      <h1 className="text-2xl">{title}</h1>
     </div>
   );
 };
