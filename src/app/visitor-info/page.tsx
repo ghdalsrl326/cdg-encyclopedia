@@ -1,21 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import localFont from "next/font/local";
 import ZoomableImage from "@/components/ZoomableImage";
 import { SlArrowDown } from "react-icons/sl";
 import SectionTitle from "@/components/SectionTitle";
 import FacilityItem from "@/components/FacilityItem";
 import RegionItem from "@/components/RegionItem";
-
-const yeongdoFont = localFont({
-  src: "../fonts/yeongdo.woff2",
-  display: "swap",
-});
-
-const scDream500Font = localFont({
-  src: "../fonts/SCDream5.otf",
-  display: "swap",
-});
+import PhotoSpotItem from "@/components/PhotoSpotItem";
+import PhotoSpotSubTitle from "@/components/PhotoSpotSubTitle";
+import { scDream500Font, yeongdoFont } from "@/data/fonts";
 
 const page = () => {
   return (
@@ -84,6 +76,14 @@ const page = () => {
           </div>
         </section>
         <hr className="border-[#FF64DE] border-t w-1/2" />
+        <section id="포토스팟" className="w-1/2 flex flex-col gap-4">
+          <SectionTitle title="포토스팟" />
+          <PhotoSpotSubTitle />
+          <PhotoSpotItem title="돈화문" />
+          <PhotoSpotItem title="인정전" />
+          <PhotoSpotItem title="낙선재" />
+          <PhotoSpotItem title="부용지" />
+        </section>
       </div>
     </section>
   );

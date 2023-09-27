@@ -1,12 +1,7 @@
 import Image from "next/image";
-import localFont from "next/font/local";
 import Link from "next/link";
 import { URL } from "@/data/url";
-
-const yeongdoFont = localFont({
-  src: "./fonts/yeongdo.woff2",
-  display: "swap",
-});
+import { yeongdoFont } from "@/data/fonts";
 
 export default function Home() {
   return (

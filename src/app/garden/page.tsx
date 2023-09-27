@@ -1,10 +1,5 @@
+import { nanumOeHarMeoNiGeurSsiFont } from "@/data/fonts";
 import React from "react";
-import localFont from "next/font/local";
-
-const nanumOeHarMeoNiGeurSsiFont = localFont({
-  src: "../fonts/NanumOeHarMeoNiGeurSsi.ttf",
-  display: "swap",
-});
 
 const page = () => {
   return (

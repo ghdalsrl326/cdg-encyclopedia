@@ -1,16 +1,6 @@
 import React from "react";
-import localFont from "next/font/local";
 import { BUILDING } from "@/data/building";
-
-const scDream300Font = localFont({
-  src: "../app/fonts/SCDream3.otf",
-  display: "swap",
-});
-
-const scDream500Font = localFont({
-  src: "../app/fonts/SCDream5.otf",
-  display: "swap",
-});
+import { scDream300Font, scDream500Font } from "@/data/fonts";
 
 type Props = {
   slug: string;

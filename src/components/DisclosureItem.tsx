@@ -4,12 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { MdKeyboardArrowUp, MdOutlineRadioButtonChecked } from "react-icons/md";
-import localFont from "next/font/local";
-
-const scDream200Font = localFont({
-  src: "../app/fonts/SCDream2.otf",
-  display: "swap",
-});
+import { scDream200Font } from "@/data/fonts";
 
 type DisclosureItemProps = {
   title: string;

@@ -1,14 +1,9 @@
 "use client";
+import { scDream400Font } from "@/data/fonts";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
-import localFont from "next/font/local";
 import { Fragment, useState } from "react";
 import { IoSearch } from "react-icons/io5";
-
-const scDream400Font = localFont({
-  src: "../app/fonts/SCDream4.otf",
-  display: "swap",
-});
 
 type Props = {
   slug: string;

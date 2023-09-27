@@ -1,15 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import localFont from "next/font/local";
 import Link from "next/link";
 import { BUILDING } from "@/data/building";
 import { usePathname } from "next/navigation";
-
-const scDream400Font = localFont({
-  src: "../app/fonts/SCDream4.otf",
-  display: "swap",
-});
+import { scDream400Font } from "@/data/fonts";
 
 const BuildingNav = () => {
   const path = usePathname();

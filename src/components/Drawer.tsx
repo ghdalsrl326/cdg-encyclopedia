@@ -6,13 +6,8 @@ import { GARDEN } from "@/data/garden";
 import { VISITORINFO } from "@/data/visitorinfo";
 import { BUILDING } from "@/data/building";
 import DisclosureItem from "./DisclosureItem";
-import localFont from "next/font/local";
 import Link from "next/link";
-
-const scDream500Font = localFont({
-  src: "../app/fonts/SCDream5.otf",
-  display: "swap",
-});
+import { scDream500Font } from "@/data/fonts";
 
 type DrawerProps = {
   isOpen: boolean;
