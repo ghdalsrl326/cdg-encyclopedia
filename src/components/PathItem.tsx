@@ -11,8 +11,10 @@ const PathItem = ({ title, path }: Props) => {
     <div
       className={`${scDream300Font.className} flex flex-col justify-center items-center`}
     >
-      <h2>{title}</h2>
-      <p className={`${scDream300Font.className} flex flex-row gap-2`}>
+      <h2 className="py-4">{title}</h2>
+      <p
+        className={`${scDream300Font.className} flex-wrap flex flex-row gap-2`}
+      >
         {path.map((item, index) => (
           <span key={index}>{item}</span>
         ))}

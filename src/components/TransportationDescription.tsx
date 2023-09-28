@@ -4,7 +4,7 @@ import React from "react";
 const TransportationDescription = () => {
   return (
     <div className="flex flex-col p-4 space-y-4">
-      <div className="flex space-x-4">
+      <div className="flex flex-col md:flex-row md:space-x-4">
         <h3 className={`${scDream600Font.className} flex-shrink-0 w-24`}>
           지하철
         </h3>
@@ -15,7 +15,7 @@ const TransportationDescription = () => {
           </h4>
         </div>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex flex-col md:flex-row md:space-x-4">
         <h3 className={`${scDream600Font.className} flex-shrink-0 w-24`}>
           버스
         </h3>

@@ -25,7 +25,7 @@ import EtiquetteDescription from "@/components/EtiquetteDescription";
 const page = () => {
   return (
     <section
-      className={`${scDream500Font.className} relative flex flex-col justify-between px-6 md:px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
+      className={`${scDream500Font.className} relative flex flex-col justify-between px-6 lg:px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
     >
       <Image
         fill
@@ -65,7 +65,7 @@ const page = () => {
         <HorizontalDivider />
         <section id="권역" className="flex flex-col gap-4 w-1/2 text-[#05AED8]">
           <SectionTitle title="권역" />
-          <div className="flex flex-col md:flex-row md:gap-16">
+          <div className="flex flex-col gap-4 md:flex-row md:gap-16">
             <div className="flex flex-col gap-4">
               <RegionItem index="1" title="돈화문" />
               <RegionItem index="2" title="인정전" />
