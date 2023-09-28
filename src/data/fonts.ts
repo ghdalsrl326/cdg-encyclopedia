@@ -1,4 +1,7 @@
 import localFont from "next/font/local";
+import { Noto_Sans_KR } from "next/font/google";
+
+export const notoSansKRFont = Noto_Sans_KR({ subsets: ["latin"] });
 
 export const scDream100Font = localFont({
   src: "../app/fonts/SCDream1.otf",

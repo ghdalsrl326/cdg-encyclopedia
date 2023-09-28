@@ -21,8 +21,8 @@ export const VISITORINFO = [
     path: encodeURIComponent("관람요금"),
   },
   {
-    id: "교통정보",
-    path: encodeURIComponent("교통정보"),
+    id: "교통안내",
+    path: encodeURIComponent("교통안내"),
   },
   {
     id: "관람예절",
