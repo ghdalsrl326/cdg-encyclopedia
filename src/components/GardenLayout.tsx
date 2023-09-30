@@ -13,14 +13,19 @@ const GardenLayout = () => {
   const [currentSurveyNode, setCurrentSurveyNode] = useState<SurveyNode | null>(
     null
   );
+  const [isNaming, setIsNaming] = useState<boolean>(false);
   const [treeName, setTreeName] = useState<string>("");
   const [treeDescription, setTreeDescription] = useState<string>("");
 
-  const handleStart = () => {
+  const handleStartSurvey = () => {
     setCurrentSurveyNode(survey.head);
   };
 
-  const handleNextToNaming = () => {};
+  const handleNextToNaming = () => {
+    setIsNaming(true);
+  };
+
+  const handleNextToSubmit = () => {};
 
   const handleNextToHome = () => {};
 
@@ -48,7 +53,7 @@ const GardenLayout = () => {
         />
       )}
       {!currentSurveyNode && (
-        <GardenNextButtonLayout onNext={handleStart}>
+        <GardenNextButtonLayout onNext={handleStartSurvey}>
           <h1>지금부터 창덕궁 후원에 함께 나무를 심어보아요.</h1>
           <Image
             className="z-10"
@@ -60,43 +65,52 @@ const GardenLayout = () => {
           />
         </GardenNextButtonLayout>
       )}
-      {currentSurveyNode && currentSurveyNode.data.result && (
-        <GardenResultLayout onNext={handleNextToNaming}>
-          <Image
-            className="z-10 border-4 border-[#A3CA7B]"
-            src={`/garden/${currentSurveyNode.data.result}.jpeg`}
-            alt={`${currentSurveyNode.data.result}`}
-            width={280}
-            height={280}
-            quality={100}
-          />
+      {currentSurveyNode && currentSurveyNode.data.result && !isNaming && (
+        <GardenResultLayout
+          onNext={handleNextToNaming}
+          result={currentSurveyNode.data.result}
+        >
           <br />
-          <h2 className="mb-2">{`<${currentSurveyNode.data.result}>`}</h2>
-          <hr className="border-[#9BCB6C] border-t w-full" />
-          <br />
-          <h3 className="mb-2">
+          <p className=" w-full mb-8 text-center underline-each-line">
+            {`<${currentSurveyNode.data.result}>`}
+            <br />
             {
               TREE.find((tree) => tree.id === currentSurveyNode.data.result)
                 ?.desc1
             }
-          </h3>
-          <hr className="border-[#9BCB6C] border-t w-full" />
-          <br />
-          <h3 className="mb-2">
+            <br />
             {
               TREE.find((tree) => tree.id === currentSurveyNode.data.result)
                 ?.desc2
             }
-          </h3>
-          <hr className="border-[#9BCB6C] border-t w-full" />
-          <br />
-          <h3 className="mb-2">
+            <br />
             {
               TREE.find((tree) => tree.id === currentSurveyNode.data.result)
                 ?.desc3
             }
-          </h3>
-          <hr className="border-[#9BCB6C] border-t w-full mb-8" />
+          </p>
+        </GardenResultLayout>
+      )}
+      {currentSurveyNode && currentSurveyNode.data.result && isNaming && (
+        <GardenResultLayout
+          onNext={handleNextToSubmit}
+          result={currentSurveyNode.data.result}
+        >
+          <br />
+          <p className=" text-center">
+            나무이름: &nbsp;
+            <input
+              className="w-1/2"
+              type="text"
+              onChange={(e) => setTreeName(e.target.value)}
+            />
+          </p>
+          <br />
+          <textarea
+            className="w-full mb-8 text-center underline-each-line"
+            placeholder="나무와 남기고 싶은 소원을 적어주세요."
+            onChange={(e) => setTreeDescription(e.target.value)}
+          ></textarea>
         </GardenResultLayout>
       )}
     </>

@@ -7,3 +7,26 @@ body {
   width: 100vw;
   overflow-y: auto;
 }
+
+.underline-each-line {
+  --lineH: 1.6em;
+  line-height: var(--lineH);
+  padding: var(--lineH);
+  padding-block: 0;
+  background: repeating-linear-gradient(
+      to bottom,
+      transparent 0 1.4em,
+      #9bcb6c 1.4em calc(1.4em + 1px),
+      transparent calc(1.4em + 1px) 1.6em
+    )
+    50% 0 / calc(100% - var(--lineH) * 2) 100% no-repeat;
+}
+
+textarea.underline-each-line {
+  border: 1px solid #ccc; /* Added to see the textarea boundaries */
+  min-height: 100px; /* Added to ensure the textarea is visible */
+  padding: var(--lineH);
+  padding-block: 0; /* reset to set the first line right at the top */
+  resize: none; /* optional: disable resizing */
+  border: none;
+}
