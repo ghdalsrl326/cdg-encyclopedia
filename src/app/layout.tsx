@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { yeongdoFont } from "@/data/fonts";
+import { RecoilRoot } from "recoil";
 
 export const metadata: Metadata = {
   title: "창덕도감 | 2023 청년 유네스코 세계유산 지킴이 {창덕하게}",
