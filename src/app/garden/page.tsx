@@ -5,33 +5,40 @@ import GardenHelpButtons from "@/components/GardenHelpButtons";
 import Link from "next/link";
 import { GARDEN } from "@/data/garden";
 import { URL } from "@/data/url";
+import { getAllTrees } from "@/service/tree";
 
-const page = () => {
+const page = async () => {
+  const trees = await getAllTrees();
+
   return (
     <section
       className={`${nanumOeHarMeoNiGeurSsiFont.className} relative h-screen flex flex-col justify-between pt-28 pb-12 items-center text-[#FF61D6] px-4 overflow-y-scroll`}
+      style={{
+        backgroundImage: "url(/garden/배경.png)",
+        backgroundRepeat: "repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <Image
-        fill
-        className="absolute top-0 left-0 z-0 w-full h-full bg-repeat"
-        src="/garden/배경.png"
-        alt="배경"
-        style={{ objectFit: "cover" }}
-        quality={100}
-      />
+      <div className="z-10 w-fullflex justify-center">
+        <div className="grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-12">
+          {trees.map((tree, index) => (
+            <div
+              key={index}
+              className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-24 lg:h-24 xl:w-20 xl:h-20 2xl:w-16 2xl:h-16"
+            >
+              <Image
+                src={`/garden/${tree.treeType}.png`}
+                alt={tree.name}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
       <GardenHelpButtons />
-      <Link
-        className="z-10 fixed bottom-20 right-20"
-        href={`${URL.GARDEN}/${GARDEN[0].path}`}
-      >
-        <Image
-          src={`/garden/시작버튼.png`}
-          alt={"시작버튼"}
-          width={172}
-          height={189}
-          quality={100}
-        />
-      </Link>
     </section>
   );
 };

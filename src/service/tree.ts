@@ -3,7 +3,7 @@ import { client } from "./sanity";
 
 export async function getAllTrees(): Promise<Tree[]> {
   const trees = await client.fetch<Tree[]>(
-    `*[_type == "tree"] | order(_createdAt desc)`
+    `*[_type == "tree"] | order(_createdAt asc)`
   );
   return trees;
 }
