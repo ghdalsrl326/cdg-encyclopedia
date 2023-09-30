@@ -19,15 +19,15 @@ const GardenResultLayout = ({ children, onNext, result }: Props) => {
         quality={100}
       />
       {children}
-      <Image
-        className="z-10 cursor-pointer"
-        src={`/garden/nextButton.svg`}
-        alt={`nextButton`}
-        width={64}
-        height={64}
-        quality={100}
-        onClick={onNext}
-      />
+      <button className="z-10 focus:outline-none" onClick={onNext}>
+        <Image
+          src={`/garden/nextButton.svg`}
+          alt={`nextButton`}
+          width={64}
+          height={64}
+          quality={100}
+        />
+      </button>
     </div>
   );
 };

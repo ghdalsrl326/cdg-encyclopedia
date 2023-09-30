@@ -29,4 +29,5 @@ textarea.underline-each-line {
   padding-block: 0; /* reset to set the first line right at the top */
   resize: none; /* optional: disable resizing */
   border: none;
+  outline: none;
 }

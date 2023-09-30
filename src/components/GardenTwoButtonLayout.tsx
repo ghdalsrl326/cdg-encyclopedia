@@ -27,24 +27,24 @@ const GardenTwoButtonLayout = ({ question, onYes, onNo }: Props) => {
       />
       <p className="z-10">{question}</p>
       <div className="w-10/12 flex flex-row justify-between">
-        <Image
-          className="z-10 cursor-pointer"
-          src={`/garden/noButton.svg`}
-          alt={`noButton`}
-          width={64}
-          height={64}
-          quality={100}
-          onClick={onNo}
-        />
-        <Image
-          className="z-10 cursor-pointer"
-          src={`/garden/yesButton.svg`}
-          alt={`yesButton`}
-          width={64}
-          height={64}
-          quality={100}
-          onClick={onYes}
-        />
+        <button onClick={onNo} className="z-10 focus:outline-none">
+          <Image
+            src={`/garden/noButton.svg`}
+            alt={`noButton`}
+            width={64}
+            height={64}
+            quality={100}
+          />
+        </button>
+        <button onClick={onYes} className="z-10 focus:outline-none">
+          <Image
+            src={`/garden/yesButton.svg`}
+            alt={`yesButton`}
+            width={64}
+            height={64}
+            quality={100}
+          />
+        </button>
       </div>
     </div>
   );
