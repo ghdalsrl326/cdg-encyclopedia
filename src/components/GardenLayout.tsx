@@ -9,6 +9,7 @@ import GardenResultLayout from "./GardenResultLayout";
 import { TREE } from "@/data/tree";
 import { useRouter } from "next/navigation";
 import { URL } from "@/data/url";
+import { createTree } from "@/service/tree";
 
 const GardenLayout = () => {
   const router = useRouter();
@@ -29,8 +30,14 @@ const GardenLayout = () => {
     setIsNaming(true);
   };
 
-  const handleNextToSubmit = () => {
+  const handleNextToSubmit = async () => {
     setIsFinished(true);
+    currentSurveyNode?.data.result &&
+      (await createTree({
+        name: treeName,
+        description: treeDescription,
+        treeType: currentSurveyNode?.data.result,
+      }));
   };
 
   const handleNextToHome = () => {

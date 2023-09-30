@@ -2,9 +2,6 @@ import { nanumOeHarMeoNiGeurSsiFont } from "@/data/fonts";
 import React from "react";
 import Image from "next/image";
 import GardenHelpButtons from "@/components/GardenHelpButtons";
-import Link from "next/link";
-import { GARDEN } from "@/data/garden";
-import { URL } from "@/data/url";
 import { getAllTrees } from "@/service/tree";
 
 const page = async () => {

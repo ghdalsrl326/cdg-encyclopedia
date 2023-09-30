@@ -20,7 +20,7 @@ export async function createTree({
   description,
   treeType,
 }: Tree): Promise<Tree> {
-  const newTree = await client.createIfNotExists({
+  const newTree = await client.create({
     _type: "tree",
     _id: name,
     name,
