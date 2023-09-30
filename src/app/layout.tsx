@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { yeongdoFont } from "@/data/fonts";
-import { RecoilRoot } from "recoil";
+import SWRConfigContext from "@/context/SWRConfigContext";
 
 export const metadata: Metadata = {
   title: "창덕도감 | 2023 청년 유네스코 세계유산 지킴이 {창덕하게}",
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={yeongdoFont.className}>
         <Header />
-        {children}
+        <SWRConfigContext>{children}</SWRConfigContext>
       </body>
     </html>
   );
