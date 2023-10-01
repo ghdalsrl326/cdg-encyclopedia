@@ -5,6 +5,7 @@ import GardenHelpButtons from "@/components/GardenHelpButtons";
 import { getAllTrees } from "@/service/tree";
 
 const page = async () => {
+  // TODO: 나무 이미지가 즉각 업데이트 되지 않는 문제 해결
   const trees = await getAllTrees();
 
   return (

@@ -1,6 +1,12 @@
 import { Tree } from "@/data/tree.type";
 import { client } from "./sanity";
 
+export const toAscii = (string: string) =>
+  string
+    .split("")
+    .map((char) => char.charCodeAt(0))
+    .join(" ");
+
 export async function getAllTrees(): Promise<Tree[]> {
   const trees = await client.fetch<Tree[]>(
     `*[_type == "tree"] | order(_createdAt asc)`
@@ -20,12 +26,12 @@ export async function createTree({
   description,
   treeType,
 }: Tree): Promise<Tree> {
-  const newTree = await client.create({
+  const newTree = await client.createIfNotExists({
     _type: "tree",
-    _id: name,
     name,
     description,
     treeType,
+    _id: toAscii(name).replaceAll(" ", "_"),
   });
   return newTree;
 }

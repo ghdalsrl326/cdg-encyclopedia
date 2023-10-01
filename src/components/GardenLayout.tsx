@@ -9,7 +9,7 @@ import GardenResultLayout from "./GardenResultLayout";
 import { TREE } from "@/data/tree";
 import { useRouter } from "next/navigation";
 import { URL } from "@/data/url";
-import { createTree } from "@/service/tree";
+import { createTree, getAllTrees, toAscii } from "@/service/tree";
 
 const GardenLayout = () => {
   const router = useRouter();
@@ -31,7 +31,20 @@ const GardenLayout = () => {
   };
 
   const handleNextToSubmit = async () => {
-    setIsFinished(true);
+    if (!treeName) {
+      alert("나무 이름을 입력해주세요.");
+      return;
+    }
+
+    await getAllTrees().then((trees) => {
+      if (trees.find((tree) => tree.name === treeName)) {
+        alert("이미 존재하는 나무 이름입니다.");
+        return;
+      } else {
+        setIsFinished(true);
+      }
+    });
+
     currentSurveyNode?.data.result &&
       (await createTree({
         name: treeName,
@@ -122,6 +135,7 @@ const GardenLayout = () => {
               나무이름: &nbsp;
               <input
                 className="w-1/2 outline-none"
+                required
                 type="text"
                 onChange={(e) => setTreeName(e.target.value)}
               />

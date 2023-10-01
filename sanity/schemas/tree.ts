@@ -9,7 +9,7 @@ export default defineType({
       name: "name",
       title: "나무 이름",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) => Rule.required().min(1).max(20),
     }),
     defineField({
       name: "description",
@@ -29,7 +29,7 @@ export default defineType({
           { title: "회화나무", value: "회화나무" },
         ],
       },
-      validation: (Rule) => Rule.required(),
+      validation: (Rule) => Rule.required().min(1).max(400),
     }),
   ],
   preview: {
