@@ -34,7 +34,7 @@ export default function Home() {
           height={685}
           quality={100}
         />
-        <div className="absolute top-2/3 z-20 text-2xl w-full px-16 text-[#FF61D6]">
+        <div className="absolute top-[70%] z-20 text-2xl w-full px-16 text-[#FF61D6]">
           <div className="flex flex-col md:flex-row gap-4 md:gap-16 text-center">
             <Link
               href={URL.VISITOR_INFO}

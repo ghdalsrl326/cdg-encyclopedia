@@ -93,10 +93,19 @@ const page = () => {
           <SectionTitle title="포토스팟" />
           <PhotoSpotSubTitle />
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <PhotoSpotItem title="돈화문" />
-            <PhotoSpotItem title="인정전" />
-            <PhotoSpotItem title="낙선재" />
-            <PhotoSpotItem title="부용지" />
+            <PhotoSpotItem
+              title="돈화문"
+              url={"https://www.instagram.com/ar/1951586811885282"}
+            />
+            <PhotoSpotItem
+              title="인정전"
+              url={"https://www.instagram.com/ar/631724325657124"}
+            />
+            <PhotoSpotItem
+              title="낙선재"
+              url={"https://www.instagram.com/ar/1455099165279921"}
+            />
+            <PhotoSpotItem title="부용지" url="" />
           </div>
         </section>
         <HorizontalDivider />
