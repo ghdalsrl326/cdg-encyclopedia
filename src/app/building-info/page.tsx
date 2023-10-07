@@ -4,16 +4,16 @@ import BuildingGrid from "@/components/BuildingGrid";
 
 const page = () => {
   return (
-    <section className="relative flex flex-col justify-between pt-28 pb-12 items-center text-[#FF61D6] px-4 overflow-y-scroll">
+    <section
+      className="relative flex flex-col justify-between pt-28 pb-12 items-center text-[#FF61D6] px-4 overflow-y-scroll"
+      style={{
+        backgroundImage: "url(/building-info/background.png)",
+        backgroundRepeat: "repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <h1 className="text-xl z-10">건물을 눌러 정보를 확인하세요!</h1>
-      <Image
-        fill
-        className="absolute top-0 left-0 z-0 w-full h-full"
-        src="/building-info/background.png"
-        alt="background-image"
-        style={{ objectFit: "cover" }}
-        quality={100}
-      />
       <Image
         className="absolute bottom-0 left-0 z-10 w-full"
         src="/building-info/backgroundFooter.png"

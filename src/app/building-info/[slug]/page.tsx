@@ -15,15 +15,15 @@ type Props = {
 
 const page = async ({ params: { slug } }: Props) => {
   return (
-    <section className="relative flex flex-col justify-between pt-28 pb-12 items-center text-[#FF61D6] px-4">
-      <Image
-        fill
-        className="absolute top-0 left-0 z-0 w-full h-full"
-        src="/building-info/background.png"
-        alt="background-image"
-        style={{ objectFit: "cover" }}
-        quality={100}
-      />
+    <section
+      className="relative flex flex-col justify-between pt-28 pb-12 items-center text-[#FF61D6] px-4"
+      style={{
+        backgroundImage: "url(/building-info/background.png)",
+        backgroundRepeat: "repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <article className="z-10 bg-white w-11/12 h-10/12 rounded-2xl">
         <BuildingNav />
         <div
