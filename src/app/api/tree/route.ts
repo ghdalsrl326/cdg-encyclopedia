@@ -1,6 +1,8 @@
-import { createTree } from "@/service/tree";
+import { createTree, getAllTrees, getTreeByName } from "@/service/tree";
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
-  return NextResponse.json("Hello world!");
+export const dynamic = "force-dynamic";
+
+export async function GET() {
+  return getAllTrees().then((data) => NextResponse.json(data));
 }

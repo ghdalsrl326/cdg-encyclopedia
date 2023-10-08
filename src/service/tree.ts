@@ -14,10 +14,16 @@ export async function getAllTrees(): Promise<Tree[]> {
   return trees;
 }
 
-export async function getTreeById(id: string): Promise<Tree> {
-  const tree = await client.fetch<Tree>(`*[_type == "tree" && _id == $id][0]`, {
-    id,
-  });
+export async function getTreeByName(name: string): Promise<Tree | null> {
+  const query = `*[_type == "tree" && name == "${name}"][0]`;
+  const params = { name };
+  const tree = await client.fetch<Tree>(query, params);
+
+  if (!tree) {
+    console.error("Tree not found");
+    return null;
+  }
+
   return tree;
 }
 
