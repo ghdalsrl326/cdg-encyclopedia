@@ -27,6 +27,18 @@ export async function getTreeByName(name: string): Promise<Tree | null> {
   return tree;
 }
 
+export async function getLastTree(): Promise<Tree | null> {
+  const query = `*[_type == "tree"] | order(_createdAt desc)[0]`;
+  const tree = await client.fetch<Tree>(query);
+
+  if (!tree) {
+    console.error("Tree not found");
+    return null;
+  }
+
+  return tree;
+}
+
 export async function createTree({
   name,
   description,
