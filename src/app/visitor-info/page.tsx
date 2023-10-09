@@ -26,15 +26,21 @@ const page = () => {
   return (
     <section
       className={`${scDream500Font.className} relative flex flex-col justify-between px-6 lg:px-64 pt-20 pb-12 items-center text-[#FF61D6] overflow-y-scroll`}
+      style={{
+        backgroundImage: "url(/visitor-info/배경.png)",
+        backgroundRepeat: "repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <Image
+      {/* <Image
         fill
         className="absolute top-0 left-0 z-0 w-full h-full"
         src="/visitor-info/배경.png"
         alt="background-image"
         style={{ objectFit: "cover" }}
         quality={100}
-      />
+      /> */}
       <button
         className={`${yeongdoFont.className} z-0 bg-white rounded-full shadow-lg shadow-[#D3EEF3] w-48 h-12 text-xl`}
         disabled
@@ -105,7 +111,10 @@ const page = () => {
               title="낙선재"
               url={"https://www.instagram.com/ar/1455099165279921"}
             />
-            <PhotoSpotItem title="부용지" url="" />
+            <PhotoSpotItem
+              title="부용지"
+              url={"https://www.instagram.com/ar/352796290426195"}
+            />
           </div>
         </section>
         <HorizontalDivider />
