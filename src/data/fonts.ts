@@ -49,7 +49,7 @@ export const scDream900Font = localFont({
 });
 
 export const yeongdoFont = localFont({
-  src: "../app/fonts/yeongdo.woff2",
+  src: "../app/fonts/YeongdoOTF.otf",
   display: "swap",
 });
 
