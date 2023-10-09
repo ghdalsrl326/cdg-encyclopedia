@@ -165,7 +165,11 @@ export const BUILDING = [
       
       애련정 일원에는 석함(石函)·석문·석누조(石漏槽) 등이 위치하며, 해치나 연판문·용두(龍頭)의 문양이 새겨졌다. 석함의 경우 애련정 좌우에 하나씩 존재하는데, 좌측 석함에 새겨진 서수(瑞獸)의 경우 뿔이 있는 것으로 보아 해치로 사료되며, 우측 석함은 연판문으로 장식되었다. 장수를 기원하는 의미에서 조영된 석문인 불로문은 큰 돌을 쪼아 만들어 이음새가 없는 것이 특징이다. 석누조에는 벽사의 의미인 용두가 나타나 있다.
       `,
-    sns: ["", "", ""],
+    sns: [
+      "https://www.instagram.com/p/Cxm-ZiFLV0j/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CxsICRmyDTA/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+      "https://www.instagram.com/p/CxxRmKPynlL/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
+    ],
   },
   {
     id: "존덕정",
