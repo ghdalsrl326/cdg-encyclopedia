@@ -115,7 +115,7 @@ const GardenSearchButton = () => {
                               style={{ objectFit: "contain" }}
                               className="z-0"
                             />
-                            <div className=" hidden group-hover:block absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-black text-white text-sm  rounded p-1 min-w-[100px] text-center">
+                            <div className="z-20 hidden group-hover:block absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-black text-white text-sm  rounded p-1 min-w-[100px] text-center">
                               {tree.name !== "" && `나무이름: ${tree.name}`}
                               <br />
                               {tree.description !== "" &&

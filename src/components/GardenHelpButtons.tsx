@@ -8,7 +8,7 @@ import { URL } from "@/data/url";
 
 const GardenHelpButtons = () => {
   return (
-    <div className="z-10 fixed w-10/12 bottom-20 flex flex-col-reverse items-end gap-4 sm:flex-row justify-between">
+    <div className="z-10 fixed w-10/12 bottom-5 xl:bottom-20 flex flex-col-reverse items-end gap-4 sm:flex-row justify-between">
       <div className="z-10 flex flex-col gap-4">
         <GardenSearchButton />
         <GardenIntroButton />
