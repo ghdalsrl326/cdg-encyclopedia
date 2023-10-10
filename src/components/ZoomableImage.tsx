@@ -58,6 +58,31 @@ const ZoomableImage = ({
     e.preventDefault();
   };
 
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setIsDragging(true);
+    const touch = e.touches[0];
+    dragStartPos.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging) return;
+
+    const touch = e.touches[0];
+    const dx = touch.clientX - dragStartPos.current.x;
+    const dy = touch.clientY - dragStartPos.current.y;
+
+    setPosition((prevPosition) => ({
+      x: prevPosition.x + dx,
+      y: prevPosition.y + dy,
+    }));
+
+    dragStartPos.current = { x: touch.clientX, y: touch.clientY };
+  };
+
   return (
     <div className="flex flex-col gap-2 p-8">
       <div
@@ -66,6 +91,9 @@ const ZoomableImage = ({
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        onTouchMove={handleTouchMove}
       >
         <Image
           className="transform transition-transform duration-300 cursor-move"
