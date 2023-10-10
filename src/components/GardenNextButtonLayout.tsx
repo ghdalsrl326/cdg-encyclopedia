@@ -8,7 +8,7 @@ type Props = {
 
 const GardenNextButtonLayout = ({ children, onNext }: Props) => {
   return (
-    <div className="flex flex-col justify-around items-center bg-white w-full h-1/2 z-10">
+    <div className="flex flex-col justify-around items-center bg-white w-full h-1/2 z-10 px-12 text-center">
       {children}
       <button onClick={onNext} className="z-10 focus:outline-none">
         <Image

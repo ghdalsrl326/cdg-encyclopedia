@@ -9,7 +9,7 @@ type Props = {
 
 const GardenTwoButtonLayout = ({ question, onYes, onNo }: Props) => {
   return (
-    <div className="flex flex-col justify-around items-center bg-white w-full h-1/2 z-10 relative">
+    <div className="flex flex-col justify-around items-center bg-white w-full h-1/2 z-10 relative px-12 text-center">
       <div className="absolute -inset-10 z-0">
         <Image
           fill
