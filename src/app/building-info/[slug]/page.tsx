@@ -20,7 +20,7 @@ const page = async ({ params: { slug } }: Props) => {
       style={{
         backgroundImage: "url(/building-info/background.png)",
         backgroundRepeat: "repeat",
-        backgroundSize: "cover",
+        backgroundSize: "auto",
         backgroundPosition: "center",
       }}
     >

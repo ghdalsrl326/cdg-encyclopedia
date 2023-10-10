@@ -29,18 +29,10 @@ const page = () => {
       style={{
         backgroundImage: "url(/visitor-info/배경.png)",
         backgroundRepeat: "repeat",
-        backgroundSize: "cover",
+        backgroundSize: "auto",
         backgroundPosition: "center",
       }}
     >
-      {/* <Image
-        fill
-        className="absolute top-0 left-0 z-0 w-full h-full"
-        src="/visitor-info/배경.png"
-        alt="background-image"
-        style={{ objectFit: "cover" }}
-        quality={100}
-      /> */}
       <button
         className={`${yeongdoFont.className} z-0 bg-white rounded-full shadow-lg shadow-[#D3EEF3] w-48 h-12 text-xl`}
         disabled

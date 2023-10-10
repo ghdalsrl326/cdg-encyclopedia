@@ -9,7 +9,7 @@ const page = () => {
       style={{
         backgroundImage: "url(/building-info/background.png)",
         backgroundRepeat: "repeat",
-        backgroundSize: "cover",
+        backgroundSize: "auto",
         backgroundPosition: "center",
       }}
     >
