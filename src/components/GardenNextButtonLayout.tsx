@@ -12,6 +12,7 @@ const GardenNextButtonLayout = ({ children, onNext }: Props) => {
       {children}
       <button onClick={onNext} className="z-10 focus:outline-none">
         <Image
+          className="w-12 md:w-14"
           src={`/garden/nextButton.svg`}
           alt={`nextButton`}
           width={64}

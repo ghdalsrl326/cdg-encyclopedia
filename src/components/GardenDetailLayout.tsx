@@ -8,9 +8,9 @@ type Props = {
 
 const GardenDetailLayout = ({ children, result }: Props) => {
   return (
-    <div className="flex flex-col justify-around items-center bg-white border border-[#989898] w-11/12 h-3/4 leading-4 px-8 py-24 z-10">
+    <div className="flex flex-col justify-around items-center bg-white border border-[#989898] w-11/12 h-3/4 leading-4 py-24 z-10">
       <Image
-        className="z-10 border-4 border-[#A3CA7B]"
+        className="z-10 border-4 border-[#A3CA7B] w-20 md:w-48"
         src={`/garden/${result}.jpeg`}
         alt={`${result}`}
         width={280}
