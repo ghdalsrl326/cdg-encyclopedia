@@ -15,7 +15,7 @@ export default function Home() {
           className="absolute top-0 left-0 z-0"
           src="/cover/under.png"
           alt="background-image"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "center" }}
           quality={100}
         />
         <Image
@@ -23,7 +23,7 @@ export default function Home() {
           className="absolute top-0 left-0 z-20"
           src="/cover/over.png"
           alt="background-animation-object"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "center" }}
           quality={100}
         />
         <Image
@@ -34,25 +34,25 @@ export default function Home() {
           height={685}
           quality={100}
         />
-        <div className="absolute top-[70%] z-20 text-2xl w-full px-16 text-[#FF61D6]">
+        <div className="absolute top-[50%] md:top-[70%] z-20 text-2xl w-full px-16 text-[#FF61D6]">
           <div className="flex flex-col md:flex-row gap-4 md:gap-16 text-center">
             <Link
               href={URL.VISITOR_INFO}
-              className="w-full md:w-1/3 p-4 bg-white rounded-full"
+              className="flex items-center justify-center w-full md:w-1/3 px-4 py-2 bg-white rounded-full"
             >
-              지도보기
+              <h2>창덕궁 지도보기</h2>
             </Link>
             <Link
               href={URL.BUILDING_INFO}
-              className="w-full md:w-1/3 p-4 bg-white rounded-full"
+              className="flex items-center justify-center w-full md:w-1/3 px-4 py-2 bg-white rounded-full"
             >
-              창덕궁 둘러보기
+              <h2>창덕궁 둘러보기</h2>
             </Link>
             <Link
               href={URL.GARDEN}
-              className="w-full md:w-1/3 p-4 bg-white rounded-full"
+              className="flex items-center justify-center w-full md:w-1/3 px-4 py-2 bg-white rounded-full"
             >
-              후원의 숲
+              <h2>후원의 숲</h2>
             </Link>
           </div>
         </div>
