@@ -60,7 +60,11 @@ const DisclosureItem = ({
             <Disclosure.Panel className="flex flex-col gap-4 px-4 pt-4 pb-2 text-sm">
               {items.map((item) => (
                 <Link
-                  href={`${urlPrefix}${fragment}${item.path}`}
+                  href={
+                    item.id === "소원 나무심기"
+                      ? `${urlPrefix}`
+                      : `${urlPrefix}${fragment}${item.path}`
+                  }
                   key={item.id}
                 >
                   <span className="inline-flex items-center gap-4">
