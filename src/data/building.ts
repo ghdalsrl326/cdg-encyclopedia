@@ -1,5 +1,13 @@
 export const BUILDING = [
-  { id: "전체보기", path: "" },
+  {
+    id: "전체보기",
+    path: "",
+    width: 280,
+    height: 223,
+    title: "",
+    description: "",
+    sns: ["", "", ""],
+  },
   {
     id: "돈화문",
     path: encodeURIComponent("돈화문"),
