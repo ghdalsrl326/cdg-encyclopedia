@@ -13,7 +13,7 @@ const Trees = () => {
 
   return (
     <div className="z-10 w-full flex justify-center">
-      <div className="grid gap-6 grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-12">
+      <div className="grid gap-6 grid-cols-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 xl:grid-cols-16 2xl:grid-cols-24">
         {trees &&
           trees.map((tree, index) => (
             <div
