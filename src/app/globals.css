@@ -19,7 +19,7 @@ body {
       #9bcb6c 1.4em calc(1.4em + 1px),
       transparent calc(1.4em + 1px) 1.6em
     )
-    50% 0 / calc(100% - var(--lineH) * 2) 100% no-repeat;
+    50% 0 / calc(100% - var(--lineH) * 1) 100% no-repeat;
 }
 
 textarea.underline-each-line {

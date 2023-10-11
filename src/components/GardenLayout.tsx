@@ -102,7 +102,7 @@ const GardenLayout = () => {
             result={currentSurveyNode.data.result}
           >
             <br />
-            <p className=" w-full mb-8 text-center underline-each-line">
+            <p className="w-full mb-8 text-center underline-each-line">
               {`<${currentSurveyNode.data.result}>`}
               <br />
               {
