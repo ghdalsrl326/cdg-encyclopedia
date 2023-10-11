@@ -26,9 +26,7 @@ const page = async ({ params: { slug } }: Props) => {
     >
       <article className="z-10 bg-white w-11/12 h-10/12 rounded-2xl">
         <BuildingNav />
-        <div
-          className={`${scDream400Font.className} whitespace-pre-wrap px-16`}
-        >
+        <div className={`${scDream400Font.className} whitespace-pre-wrap px-8`}>
           <div className="flex flex-row justify-center py-6">
             <Image
               src={`/building-info/${decodeURIComponent(slug)}.svg`}
