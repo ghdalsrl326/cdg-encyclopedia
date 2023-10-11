@@ -1,4 +1,5 @@
 export const BUILDING = [
+  { id: "전체보기", path: "" },
   {
     id: "돈화문",
     path: encodeURIComponent("돈화문"),

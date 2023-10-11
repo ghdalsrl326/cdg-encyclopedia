@@ -61,7 +61,7 @@ const DisclosureItem = ({
               {items.map((item) => (
                 <Link
                   href={
-                    item.id === "소원 나무심기"
+                    item.id === "소원 나무심기" || item.id === "전체보기"
                       ? `${urlPrefix}`
                       : `${urlPrefix}${fragment}${item.path}`
                   }

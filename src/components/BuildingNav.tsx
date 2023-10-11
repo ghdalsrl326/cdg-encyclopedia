@@ -29,20 +29,22 @@ const BuildingNav = () => {
       </div>
       <div className={`${scDream400Font.className} text-center`}>
         <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
-          {Array.from(BUILDING).map((building) => (
-            <Link
-              key={building.path}
-              className={`w-16 sm:w-24 rounded-full border-[#FF64DE] border-2 px-2 sm:px-4 py-1 text-xs sm:text-base 
+          {Array.from(BUILDING)
+            .filter((building) => building.id !== "전체보기")
+            .map((building) => (
+              <Link
+                key={building.path}
+                className={`w-16 sm:w-24 rounded-full border-[#FF64DE] border-2 px-2 sm:px-4 py-1 text-xs sm:text-base 
               ${
                 path === `/building-info/${building.path}`
                   ? "bg-[#FF64DE] text-white"
                   : "hover:bg-[#FFDAF7]"
               }`}
-              href={`/building-info/${building.path}`}
-            >
-              {building.id}
-            </Link>
-          ))}
+                href={`/building-info/${building.path}`}
+              >
+                {building.id}
+              </Link>
+            ))}
         </div>
       </div>
     </nav>

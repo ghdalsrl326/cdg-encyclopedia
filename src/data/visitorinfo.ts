@@ -1,4 +1,5 @@
 export const VISITORINFO = [
+  { id: "전체보기", path: "" },
   { id: "시설정보", path: encodeURIComponent("시설정보") },
   {
     id: "권역",
