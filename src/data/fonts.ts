@@ -57,3 +57,8 @@ export const nanumOeHarMeoNiGeurSsiFont = localFont({
   src: "../app/fonts/NanumOeHarMeoNiGeurSsi.ttf",
   display: "swap",
 });
+
+export const godoFont = localFont({
+  src: "../app/fonts/GodoB.ttf",
+  display: "swap",
+});
