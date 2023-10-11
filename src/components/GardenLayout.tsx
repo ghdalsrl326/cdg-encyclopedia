@@ -105,20 +105,16 @@ const GardenLayout = () => {
             <p className="w-full mb-8 text-center underline-each-line">
               {`<${currentSurveyNode.data.result}>`}
               <br />
-              {
+              {`${
                 TREE.find((tree) => tree.id === currentSurveyNode.data.result)
                   ?.desc1
-              }
-              <br />
-              {
+              } ${
                 TREE.find((tree) => tree.id === currentSurveyNode.data.result)
                   ?.desc2
-              }
-              <br />
-              {
+              } ${
                 TREE.find((tree) => tree.id === currentSurveyNode.data.result)
                   ?.desc3
-              }
+              }`}
             </p>
           </GardenResultLayout>
         )}

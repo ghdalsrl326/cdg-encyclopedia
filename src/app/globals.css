@@ -11,7 +11,7 @@ body {
 .underline-each-line {
   --lineH: 1.6em;
   line-height: var(--lineH);
-  padding: var(--lineH);
+  padding: 1rem;
   padding-block: 0;
   background: repeating-linear-gradient(
       to bottom,
