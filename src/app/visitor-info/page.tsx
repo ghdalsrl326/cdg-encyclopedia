@@ -48,22 +48,27 @@ const page = () => {
       />
       <div className="flex flex-col gap-12 items-center rounded-3xl z-0 w-full bg-white">
         <SlArrowDown className=" text-[#FFC1F2] h-12 w-12" />
-        <section id="시설정보" className="w-1/2 flex flex-col gap-4">
+        <section
+          id="시설정보"
+          className="w-3/4 flex flex-col gap-4 items-center"
+        >
           <SectionTitle title="시설정보" />
-          <FacilityItem src="매표소" title="매표소" />
-          <FacilityItem src="안내" title="안내" />
-          <FacilityItem src="화장실" title="화장실" />
-          <FacilityItem src="홍보관" title="홍보관 ( 음료, 기념품점 )" />
-          <FacilityItem src="휠체어" title="휠체어, 유모차 대여" />
-          <FacilityItem src="물품보관함" title="물품보관함" />
-          <FacilityItem src="수유실" title="수유실" />
-          <FacilityItem src="구급약품" title="구급약품" />
-          <FacilityItem src="심장제세동기" title="심장제세동기" />
+          <div className="flex flex-col gap-4 items-start">
+            <FacilityItem src="매표소" title="매표소" />
+            <FacilityItem src="안내" title="안내" />
+            <FacilityItem src="화장실" title="화장실" />
+            <FacilityItem src="홍보관" title="홍보관 ( 음료, 기념품점 )" />
+            <FacilityItem src="휠체어" title="휠체어, 유모차 대여" />
+            <FacilityItem src="물품보관함" title="물품보관함" />
+            <FacilityItem src="수유실" title="수유실" />
+            <FacilityItem src="구급약품" title="구급약품" />
+            <FacilityItem src="심장제세동기" title="심장제세동기" />
+          </div>
         </section>
         <HorizontalDivider />
-        <section id="권역" className="flex flex-col gap-4 w-1/2 text-[#05AED8]">
+        <section id="권역" className="w-3/4 flex flex-col gap-4 text-[#05AED8]">
           <SectionTitle title="권역" />
-          <div className="flex flex-col gap-4 md:flex-row md:gap-16">
+          <div className="flex flex-col justify-center gap-4 md:flex-row md:gap-16">
             <div className="flex flex-col gap-4">
               <RegionItem index="1" title="돈화문" />
               <RegionItem index="2" title="인정전" />
@@ -87,10 +92,10 @@ const page = () => {
           </div>
         </section>
         <HorizontalDivider />
-        <section id="포토스팟" className="w-1/2 flex flex-col gap-4">
+        <section id="포토스팟" className="w-3/4 flex flex-col gap-4">
           <SectionTitle title="포토스팟" />
           <PhotoSpotSubTitle />
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 self-center gap-16 md:grid-cols-2">
             <PhotoSpotItem
               title="돈화문"
               url={"https://www.instagram.com/ar/1951586811885282"}
@@ -110,7 +115,7 @@ const page = () => {
           </div>
         </section>
         <HorizontalDivider />
-        <section id="추천동선" className="w-1/2 flex flex-col gap-4">
+        <section id="추천동선" className="w-3/4 flex flex-col gap-4">
           <SectionTitle title="추천동선" />
           <PathItem
             title="창덕궁의 주요 전각이 보고싶다면?"
@@ -126,7 +131,7 @@ const page = () => {
           />
         </section>
         <HorizontalDivider />
-        <section id="관람시간" className="w-1/2 flex flex-col gap-4">
+        <section id="관람시간" className="w-3/4 flex flex-col gap-4">
           <SectionTitle title="관람시간" />
           <VisitingHoursItem
             title="2월~5월, 9월~10월 "
@@ -138,18 +143,18 @@ const page = () => {
           <VisitingHoursDescription />
         </section>
         <HorizontalDivider />
-        <section id="관람요금" className="w-1/2 flex flex-col gap-4">
+        <section id="관람요금" className="w-3/4 flex flex-col gap-4">
           <SectionTitle title="관람요금" />
           <PricingTable />
           <PricingDescription />
         </section>
         <HorizontalDivider />
-        <section id="교통안내" className="w-1/2 flex flex-col gap-4">
+        <section id="교통안내" className="w-3/4 flex flex-col gap-4">
           <SectionTitle title="교통안내" />
           <TransportationDescription />
         </section>
         <HorizontalDivider />
-        <section id="관람예절" className="w-1/2 flex flex-col gap-4">
+        <section id="관람예절" className="w-3/4 flex flex-col gap-4">
           <SectionTitle title="관람예절" />
           <EtiquetteDescription />
         </section>

@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         <Image
           fill
-          className="absolute top-0 left-0 z-0"
+          className="absolute top-0 left-0 z-0 h-screen"
           src="/cover/under.png"
           alt="background-image"
           style={{ objectFit: "cover", objectPosition: "center" }}
@@ -34,7 +34,7 @@ export default function Home() {
           height={685}
           quality={100}
         />
-        <div className="absolute top-[50%] md:top-[70%] z-20 text-2xl w-full px-16 text-[#FF61D6]">
+        <div className="absolute top-[65%] md:top-[80%] z-20 text-2xl w-full px-16 text-[#FF61D6]">
           <div className="flex flex-col md:flex-row gap-4 md:gap-16 text-center">
             <Link
               href={URL.VISITOR_INFO}
